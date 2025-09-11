@@ -1,54 +1,32 @@
 export default function Maintenance() {
   return (
-    <div className="min-h-screen grid place-items-center bg-slate-950 text-slate-100 p-6">
-      <span className="h-2 w-2 rounded-full bg-amber-400 mr-2 animate-pulse" />
-      <span className="text-sm text-slate-300">Maintenance en cours</span>
-      <main className="w-full max-w-lg text-center">
+    <div className="container">
+      <span className="maintenance"> Maintenance en cours</span>
+      <main>
         <img src="/logo_j2bdev.png" alt="logo j2bdev" className="logo" />
 
-        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3">
-          J2BDev revient bientôt ✨
-        </h1>
-        <p className="text-slate-300 mb-8">
+        <h1 className="title">J2BDev revient bientôt ✨</h1>
+        <p className="phrase">
           Je prépare une nouvelle version de mon portfolio (React + Node).\n
           Merci pour votre patience.
         </p>
 
-        <div className="relative h-2 w-full rounded-full bg-slate-800 overflow-hidden mb-8">
-          <div className="absolute inset-y-0 left-0 w-1/3 animate-[loading_1.6s_ease-in-out_infinite] bg-gradient-to-r from-amber-400/20 via-amber-400/70 to-amber-400/20" />
-        </div>
-
-        <div className="flex flex-col items-center gap-2 text-sm text-slate-400">
+        <div className="contact">
           <p>
             Besoin de me joindre ?
-            <a
-              href="mailto:contact@j2bdev.fr"
-              className="ml-1 underline decoration-dotted underline-offset-4 hover:text-slate-200"
-            >
-              contact@j2bdev.fr
-            </a>
-          </p>
-          <p>
-            Suivez l'avancement sur
+            <a href="mailto:contact@j2bdev.fr"> contact@j2bdev.fr </a> <br />
+            Suivez l'avancement sur :
             <a
               href="https://github.com/FullMetal2/J2BDEV"
               target="_blank"
               rel="noreferrer"
-              className="ml-1 underline decoration-dotted underline-offset-4 hover:text-slate-200"
             >
-              GitHub
+              {" "}
+              GitHub{" "}
             </a>
           </p>
         </div>
       </main>
-
-      <style>{`
-        @keyframes loading {
-          0% { transform: translateX(-40%); }
-          50% { transform: translateX(120%); }
-          100% { transform: translateX(120%); }
-        }
-      `}</style>
     </div>
   );
 }
