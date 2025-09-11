@@ -63,22 +63,5 @@ Back-office léger pour gérer les projets
 
 Optimisation SEO et accessibilité
 
-yaml
-Copier le code
 
----
-
-👉 Ce README est **safe pour GitHub public** :
-- Pas de secrets, pas de DNS, pas d’infos persos.
-- Suffisant pour que n’importe qui clone et teste en local.
-
----
-
-Tu veux que je te prépare aussi la **version “doc privée”** (avec DNS OVH, Vercel, Render, MX mails, etc.) que tu garderas dans Notion/local ?
-
-
-
-
-
-Demander à ChatGPT
 ```
