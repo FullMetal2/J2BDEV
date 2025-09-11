@@ -3,89 +3,89 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --container: 720px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-}
-a:hover {
-}
-
+/* body global */
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh; /* mieux que 100vh sur mobile */
+  display: grid;
+  place-items: center;
+  padding: var(--space-5) var(--space-3);
+  background: #242424; /* ton fond actuel */
+  color: rgba(255, 255, 255, 0.87);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/* wrapper centré */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+  width: 100%;
+  max-width: var(--container);
+  text-align: center;
 }
 
-.maintenance {
-  font-size: 50px;
-  margin-bottom: 50px;
-}
-
+/* pile verticale */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--space-4);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* gros titre (haut de la page) */
+.maintenance {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(20px, 6vw, 40px); /* fluide */
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+/* logo responsive et contenu */
+.logo {
+  width: 100%;
+  max-width: 112px; /* limite desktop */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: var(--space-4);
+}
+
+/* sous-titre */
+.subtitle {
+  font-size: clamp(20px, 3.8vw, 28px);
+  line-height: 1.25;
+  margin: 0;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+/* phrase */
+.phrase {
+  color: #94a3b8;
+  font-size: clamp(14px, 3.2vw, 16px);
+  line-height: 1.6;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+/* liens */
+.contact {
+  font-size: clamp(14px, 3.2vw, 16px);
+  color: #94a3b8;
 }
-a {
-  text-decoration: none;
+.contact a {
   color: #80f1ca;
+  text-decoration: none;
+  text-underline-offset: 4px;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+.contact a:hover {
+  color: #bafce4;
+}
+
+/* petit confort sur ≥768px */
+@media (min-width: 768px) {
+  body {
+    padding: 56px var(--space-5);
   }
 }
