@@ -1,8 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
 export default function Maintenance() {
   return (
     <div className="min-h-screen grid place-items-center bg-slate-950 text-slate-100 p-6">
