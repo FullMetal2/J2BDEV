@@ -3,7 +3,7 @@ export default function Maintenance() {
     <div className="container">
       <span className="maintenance"> Maintenance en cours</span>
       <main>
-        <img src="/logo_j2bdev.png" alt="logo j2bdev" className="logo" />
+        <img src="/logo_j2bdev.webp" alt="Logo J2BDev" className="logo" />
 
         <h1 className="title">J2BDev revient bientôt ✨</h1>
         <p className="phrase">
