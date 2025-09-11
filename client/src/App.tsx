@@ -1,11 +1,11 @@
 export default function Maintenance() {
   return (
     <div className="min-h-screen grid place-items-center bg-slate-950 text-slate-100 p-6">
+      <span className="h-2 w-2 rounded-full bg-amber-400 mr-2 animate-pulse" />
+      <span className="text-sm text-slate-300">Maintenance en cours</span>
       <main className="w-full max-w-lg text-center">
-        <div className="inline-flex items-center justify-center rounded-2xl border border-slate-800 bg-slate-900/60 px-5 py-2 mb-6">
-          <span className="h-2 w-2 rounded-full bg-amber-400 mr-2 animate-pulse" />
-          <span className="text-sm text-slate-300">Maintenance en cours</span>
-        </div>
+        <img src="/logo_j2bdev.png" alt="logo j2bdev" className="logo" />
+
         <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3">
           J2BDev revient bientôt ✨
         </h1>
@@ -31,7 +31,7 @@ export default function Maintenance() {
           <p>
             Suivez l'avancement sur
             <a
-              href="https://github.com/J2BDev"
+              href="https://github.com/FullMetal2/J2BDEV"
               target="_blank"
               rel="noreferrer"
               className="ml-1 underline decoration-dotted underline-offset-4 hover:text-slate-200"
