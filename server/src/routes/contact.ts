@@ -13,6 +13,7 @@ router.post("/", (req, res) => {
   }
 
   const { name, email, message } = parsed.data;
+  // MVP: log + TODO: send mail / save DB
   console.log("Contact : ", {
     name,
     email,
