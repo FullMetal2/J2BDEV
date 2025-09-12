@@ -39,3 +39,4 @@ export default function Maintenance() {
     </div>
   );
 }
+console.log(import.meta.env.VITE_API_URL);
