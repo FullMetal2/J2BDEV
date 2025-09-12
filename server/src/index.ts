@@ -27,5 +27,5 @@ app.use("/api/contact", contactLimiter, contactRouter);
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.use("/api/projects", projectsRouter);
 
-const PORT = process.env.PORT ? Number(process.env.PORT) : 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`API up on :${PORT}`));
