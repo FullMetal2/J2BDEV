@@ -1,4 +1,6 @@
 export default function Maintenance() {
+  console.log(import.meta.env.VITE_API_URL);
+
   return (
     <div className="container">
       {/* Titre principal */}
@@ -28,7 +30,7 @@ export default function Maintenance() {
             <a
               href="https://github.com/FullMetal2/J2BDEV"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
             >
               {" "}
               GitHub
@@ -39,4 +41,3 @@ export default function Maintenance() {
     </div>
   );
 }
-console.log(import.meta.env.VITE_API_URL);
