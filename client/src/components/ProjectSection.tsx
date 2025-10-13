@@ -1,10 +1,8 @@
-import { type Project } from "../lib/api";
+import { type Project } from "../lib/dataProjects";
 
 type Props = {
   title: string;
   items: Project[];
-  loading?: boolean;
-  error?: string | null;
   variant?: "featured" | "grid";
 };
 const colsByVariant = {
@@ -12,15 +10,7 @@ const colsByVariant = {
   grid: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
 };
 
-export default function ProjectSection({
-  title,
-  items,
-  loading,
-  error,
-  variant,
-}: Props) {
-  if (loading) return <p className="text-sm opacity-70">Chargement...</p>;
-  if (error) return <p className="text-red-500">{error}</p>;
+export default function ProjectSection({ title, items, variant }: Props) {
   if (items.length === 0)
     return <p className="opacity-70">Aucun projet trouvé.</p>;
 

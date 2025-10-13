@@ -1,11 +1,19 @@
+import htmlLogo from "@/assets/logo-skills/html.svg";
+import cssLogo from "@/assets/logo-skills/css.svg";
+import jsLogo from "@/assets/logo-skills/js.svg";
+import reactLogo from "@/assets/logo-skills/react.svg";
+import nodeLogo from "@/assets/logo-skills/node.svg";
+import tsLogo from "@/assets/logo-skills/typescript-svgrepo-com.svg";
+import gitLogo from "@/assets/logo-skills/git.svg";
+
 const skills = [
-  { name: "HTML", logo: "logo-skills/html.svg" },
-  { name: "CSS", logo: "logo-skills/css.svg" },
-  { name: "JavaScript", logo: "logo-skills/js.svg" },
-  { name: "React", logo: "logo-skills/react.svg" },
-  { name: "Node.js", logo: "logo-skills/node.svg" },
-  { name: "TypeScript", logo: "logo-skills/typescript-svgrepo-com.svg" },
-  { name: "Git", logo: "logo-skills/git.svg" },
+  { name: "HTML", logo: htmlLogo },
+  { name: "CSS", logo: cssLogo },
+  { name: "JavaScript", logo: jsLogo },
+  { name: "React", logo: reactLogo },
+  { name: "Node.js", logo: nodeLogo },
+  { name: "TypeScript", logo: tsLogo },
+  { name: "Git", logo: gitLogo },
 ];
 
 export default function Skills() {

@@ -1,7 +1,7 @@
 import HeaderHome from "../components/HeaderHome";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Featured from "../components/FeaturedProject";
+import Featured from "../components/CompletedProject";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 

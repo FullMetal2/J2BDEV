@@ -1,35 +1,8 @@
-import { useEffect, useState } from "react";
-import { api, type Project } from "../lib/api";
+/*import { projects } from "../lib/dataProjects";
 import ProjectSection from "./ProjectSection";
 
-const featuredIds = [1, 2];
-
 export default function FeaturedProjects() {
-  const [items, setItems] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    let alive = true;
-    setLoading(true);
-
-    api
-      .getProjects()
-      .then((data) => {
-        if (alive)
-          setItems(data.items.filter((p) => featuredIds.includes(p.id)));
-      })
-      .catch(() => {
-        if (alive) setError("Erreur lors du chargement des projets");
-      })
-      .finally(() => {
-        if (alive) setLoading(false);
-      });
-
-    return () => {
-      alive = false;
-    };
-  }, []);
+  const featuredIds = projects.filter((p) => p.id);
 
   return (
     <>
@@ -38,14 +11,8 @@ export default function FeaturedProjects() {
           Projets à la une
         </h2>
 
-        <ProjectSection
-          title=""
-          items={items}
-          error={error}
-          loading={loading}
-          variant="featured"
-        />
+        <ProjectSection title="" items={featuredIds} variant="featured" />
       </section>
     </>
   );
-}
+}*/

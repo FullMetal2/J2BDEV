@@ -1,8 +1,8 @@
 import logo from "../assets/logo_j2bdev.webp";
-import insta from "../../public/logo-reseaux/instagram.png";
-import lk from "../../public/logo-reseaux/in.svg";
-import git from "../../public/logo-skills/git.svg";
-import arrow from "../../public/logo-skills/arrow-top.svg";
+import insta from "../assets/logo-reseaux/instagram.png";
+import lk from "../assets/logo-reseaux/in.svg";
+import git from "../assets/logo-skills/git.svg";
+import arrow from "../assets/logo-skills/arrow-top.svg";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
