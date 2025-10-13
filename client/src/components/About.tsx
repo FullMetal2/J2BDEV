@@ -1,4 +1,4 @@
-import user from "../../public/photo.jpg";
+import user from "../assets/photo.jpg";
 
 export default function About() {
   return (
