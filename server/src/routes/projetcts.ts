@@ -23,8 +23,8 @@ router.get("/", (req, res) => {
   res.json({ items: result });
 });
 
-router.get("/:slug", (req, res) => {
-  const item = projects.find((p) => p.slug === req.params.slug);
+router.get("/:id", (req, res) => {
+  const item = projects.find((p) => p.id === Number(req.params.id));
   if (!item) return res.status(404).json({ error: "Not found" });
   res.json(item);
 });

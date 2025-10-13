@@ -21,7 +21,9 @@ export function ProjectsList() {
   return (
     <ul>
       {items.map((p) => (
-        <li key={p.slug}>{p.title}</li>
+        <li key={p.id}>
+          {p.title} <br /> <a href={p.demoUrl}>Lien</a>
+        </li>
       ))}
     </ul>
   );

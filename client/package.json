@@ -9,10 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-  },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@tailwindcss/postcss": "^4.1.13",
@@ -29,5 +25,15 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/poppins": "^5.2.7",
+    "framer-motion": "^12.23.24",
+    "gsap": "^3.13.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.3",
+    "react-router-hash-link": "^2.4.3"
   }
 }
