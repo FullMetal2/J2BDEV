@@ -31,7 +31,12 @@ export default function ProjectSection({ title, items, variant }: Props) {
             className="p-4 md:size-110 card relative overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
-              <img src={p.cover} alt={p.title} className="mb-3 rounded-lg" />
+              <img
+                src={p.cover}
+                alt={p.title}
+                className="mb-3 rounded-lg w-full h-auto block"
+                loading="lazy"
+              />
               <h3 className="text-lg font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-indigo-300 opacity-80">
                 {p.summary}
