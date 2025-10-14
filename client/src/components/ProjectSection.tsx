@@ -24,29 +24,31 @@ export default function ProjectSection({ title, items, variant }: Props) {
         {items.map((p) => (
           <li
             key={p.id}
-            className="p-4 card md:size-110 overflow-hidden rounded-xl"
+            className="p-4 card-wrapper md:size-110 overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
-              <img
-                src={p.cover}
-                alt={p.title}
-                className="mb-3 rounded-lg"
-                loading="lazy"
-              />
+              <div className="card">
+                <img
+                  src={p.cover}
+                  alt={p.title}
+                  className="mb-3 rounded-lg"
+                  loading="lazy"
+                />
 
-              <h3 className="text-lg font-medium">{p.title}</h3>
-              <p className="mt-1 text-sm text-indigo-300 opacity-80">
-                {p.summary}
-              </p>
-              {p.tags?.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-2 text-xs opacity-80">
-                  {p.tags.map((t) => (
-                    <span key={t} className="rounded bg-white/10 px-2 py-0.5">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              )}
+                <h3 className="text-lg font-medium">{p.title}</h3>
+                <p className="mt-1 text-sm text-indigo-300 opacity-80">
+                  {p.summary}
+                </p>
+                {p.tags?.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2 text-xs opacity-80">
+                    {p.tags.map((t) => (
+                      <span key={t} className="rounded bg-white/10 px-2 py-0.5">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </a>
           </li>
         ))}
