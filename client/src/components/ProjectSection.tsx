@@ -7,7 +7,7 @@ type Props = {
 };
 const colsByVariant = {
   featured: "grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto",
-  grid: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
+  grid: "grid-cols-1 sm:grid-cols-2 max-w6xl mx-auto",
 };
 
 export default function ProjectSection({ title, items, variant }: Props) {
@@ -20,14 +20,23 @@ export default function ProjectSection({ title, items, variant }: Props) {
         {title}
       </h2>
 
-      <ul className={`grid gap-6 ${colsByVariant[variant ?? "grid"]}`}>
+      <ul
+        className={`grid place-items-center gap-10 ${
+          colsByVariant[variant ?? "grid"]
+        }`}
+      >
         {items.map((p) => (
           <li
             key={p.id}
-            className="p-4 card relative flex justify-center items-center overflow-hidden rounded-xl"
+            className="p-4 md:size-110 card relative overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
-              <img src={p.cover} alt={p.title} className="mb-3 rounded-lg" />
+              <img
+                src={p.cover}
+                alt={p.title}
+                className="mb-3 rounded-lg"
+                loading="lazy"
+              />
               <h3 className="text-lg font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-indigo-300 opacity-80">
                 {p.summary}

@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "sharp": "^0.34.4"
+  }
 }

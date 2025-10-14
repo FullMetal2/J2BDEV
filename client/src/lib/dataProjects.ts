@@ -1,8 +1,8 @@
-import detective from "@/assets/webp/images/logo-detective.webp";
-import steam from "@/assets/webp/images/cover-app-steam.webp";
-import nina from "@/assets/webp/images/nina.webp";
-import kasa from "@/assets/webp/images/kasa.png";
-import booki from "@/assets/webp/images/booki.png";
+import detective from "@assets/webp/thumbs2/logo-detective.webp";
+import steam from "@assets/webp/thumbs2/cover-app-steam.webp";
+import nina from "@assets/webp/thumbs2/nina.webp";
+import kasa from "@assets/webp/thumbs2/kasa.webp";
+import booki from "@assets/webp/thumbs2/booki.webp";
 
 export type Project = {
   id: number;
