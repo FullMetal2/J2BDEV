@@ -1,4 +1,4 @@
-/*@layer components {
+@layer components {
   :root {
     --card-bg: #171717;
     --glow: rgba(54, 121, 255, 0.8);
@@ -6,7 +6,6 @@
 
   .card {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    will-change: transform;
   }
 
   .card::before {
@@ -62,4 +61,4 @@
       transform: rotate(360deg);
     }
   }
-}*/
+}
