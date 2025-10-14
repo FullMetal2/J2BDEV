@@ -28,13 +28,14 @@ export default function ProjectSection({ title, items, variant }: Props) {
         {items.map((p) => (
           <li
             key={p.id}
-            className="p-4 card relative overflow-hidden rounded-xl"
+            className="p-4 card md:size-110 relative overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
               <img
                 src={p.cover}
                 alt={p.title}
-                className="mb-3 rounded-lg w-full h-auto block"
+                className="mb-3 rounded-lg"
+                loading="lazy"
               />
               <h3 className="text-lg font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-indigo-300 opacity-80">
