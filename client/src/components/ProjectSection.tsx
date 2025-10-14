@@ -24,7 +24,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
         {items.map((p) => (
           <li
             key={p.id}
-            className="p-4 card md:size-110 relative overflow-hidden rounded-xl"
+            className="p-4 card md:size-110 overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
               <img
