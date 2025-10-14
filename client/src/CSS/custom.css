@@ -1,4 +1,4 @@
-@layer components {
+/*@layer components {
   :root {
     --card-bg: #171717;
     --glow: rgba(54, 121, 255, 0.8);
@@ -62,4 +62,4 @@
       transform: rotate(360deg);
     }
   }
-}
+}*/
