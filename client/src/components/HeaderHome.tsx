@@ -1,4 +1,4 @@
-import logo from "../assets/logo_j2bdev.webp";
+import logo from "../assets/webp/images/logo_j2bdev.webp";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -6,14 +6,14 @@ export default function HeaderHome() {
   return (
     <>
       <header
-        className=" py-10 md:py-14 border-b border-white/10 mb-10 md:mb-20 flex flex-col items-center justify-between gap-4 md:flex-row"
+        className=" py-10 md:py-14 border-b border-white/10 md:mb-20 flex flex-col items-center justify-between md:flex-row"
         id="accueil"
       >
         <img src={logo} alt="Logo J2BDev" className="w-40 md:w-56 mb-3" />
-        <h1 className=" text-neutral-400 sm:text-2xl lg:text-2xl font-display font-semibold tracking-tight">
+        <h1 className=" text-neutral-400 sm:text-2xl lg:text-2xl text-center font-display font-semibold tracking-tight">
           Développeur web full-stack — React, Node, TypeScript
         </h1>
-        <nav className="mt-4 md:mt-0 text-sm-base space-x-2 gap-12 py-16">
+        <nav className="md:mt-0 text-sm-base space-x-2 gap-12 py-10">
           <NavLink to="/">Accueil</NavLink> |{" "}
           <NavLink to="/projects">Projets</NavLink> |{" "}
           <HashLink to="/#contact">Contact</HashLink> |{" "}

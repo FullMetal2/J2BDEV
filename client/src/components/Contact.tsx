@@ -40,9 +40,9 @@ export default function Contact() {
 
   return (
     <>
-      <section id="contact" className=" py-16 md:py-20  text-white rounded-2xl">
+      <section id="contact" className="md:py-20  text-white rounded-2xl">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="flex justify-center mb-8 text-2xl md:text-3xl font-display font-semibold tracking-tight">
+          <h2 className="mb-8 text-2xl md:text-3xl text-center font-display font-semibold tracking-tight">
             Me contacter
           </h2>
 

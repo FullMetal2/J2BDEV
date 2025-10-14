@@ -8,14 +8,22 @@ import Footer from "../components/Footer";
 export default function HomePage() {
   return (
     <>
-      <main className="flex flex-col gap-30">
+      <div className="">
         <HeaderHome />
         <About />
+      </div>
+      <div className="py-10">
         <Skills />
+      </div>
+      <div className="py-10">
         <Featured />
+      </div>
+      <div className="py-10">
         <Contact />
+      </div>
+      <div className="py-10">
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

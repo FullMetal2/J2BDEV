@@ -1,9 +1,9 @@
-import user from "../assets/photo.jpg";
+import user from "@/assets//webp/images/photo.webp";
 
 export default function About() {
   return (
     <>
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <section className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
         <img
           src={user}
           alt="Photo de Jb"

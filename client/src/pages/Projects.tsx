@@ -6,13 +6,15 @@ import Footer from "../components/Footer";
 
 export default function ProjectsPage() {
   return (
-    <section className="p-16">
-      <HeaderProject />
-      <AboutProject />
-      <div className="py-16">
+    <section>
+      <div className="">
+        <HeaderProject />
+        <AboutProject />
+      </div>
+      <div className="py-10">
         <TrainingProject />
       </div>
-      <div className="py-16">
+      <div className="py-10">
         <CompletedProject />
       </div>
       <Footer />

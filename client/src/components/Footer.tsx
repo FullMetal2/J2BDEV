@@ -1,8 +1,8 @@
-import logo from "../assets/logo_j2bdev.webp";
-import insta from "../assets/logo-reseaux/instagram.png";
-import lk from "../assets/logo-reseaux/in.svg";
-import git from "../assets/logo-skills/git.svg";
-import arrow from "../assets/logo-skills/arrow-top.svg";
+import logo from "../assets/webp/images/logo_j2bdev.webp";
+import insta from "../assets/webp/logo-reseaux/instagram.webp";
+import lk from "../assets/webp/logo-reseaux/in.webp";
+import git from "../assets/webp/logo-skills/git.webp";
+import arrow from "../assets/webp/logo-skills/arrow-top.webp";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <section className="md:py-20 text-neutral-300 rounded-2xl">
         <footer
-          className="mx-auto max-w-6xl px-4 py-16
+          className="mx-auto max-w-6xl px-4
                   grid gap-8
                   sm:grid-cols-2 lg:grid-cols-3"
         >

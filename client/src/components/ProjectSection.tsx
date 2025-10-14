@@ -16,7 +16,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
 
   return (
     <section className="space-y-6">
-      <h2 className=" py-10 text-2xl font-display font-semibold tracking-tight">
+      <h2 className=" py-10 text-2xl text-center font-display font-semibold tracking-tight">
         {title}
       </h2>
 
@@ -27,11 +27,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
             className="p-4 card relative flex justify-center items-center overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
-              <img
-                src={p.cover}
-                alt={p.title}
-                className="mb-3 aspect-video w-full rounded-lg object-cover"
-              />
+              <img src={p.cover} alt={p.title} className="mb-3 rounded-lg" />
               <h3 className="text-lg font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-indigo-300 opacity-80">
                 {p.summary}
