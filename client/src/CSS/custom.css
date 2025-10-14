@@ -48,9 +48,6 @@
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 10px 30px rgba(54, 121, 255, 0.3);
   }
-  .card > * {
-    z-index: 2;
-  }
 
   @media (prefers-reduced-motion: reduce) {
     .card::before {
