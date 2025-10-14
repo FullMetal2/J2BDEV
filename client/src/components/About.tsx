@@ -1,11 +1,9 @@
 import user from "@/assets/webp/images/photo.webp";
-import booki from "@/assets/booki.webp";
 
 export default function About() {
   return (
     <>
       <section className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
-        <img src={booki} alt="" />
         <img
           src={user}
           alt="Photo de Jb"

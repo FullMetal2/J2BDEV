@@ -33,6 +33,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
                 className="mb-3 rounded-lg"
                 loading="lazy"
               />
+
               <h3 className="text-lg font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-indigo-300 opacity-80">
                 {p.summary}
