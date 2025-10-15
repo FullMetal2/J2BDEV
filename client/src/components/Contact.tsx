@@ -10,21 +10,26 @@ const appear = (d = 0) => ({
 });
 
 export default function Contact() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (!form.current) return;
+
     emailjs
-      .sendForm("ID_SERVICE", "TEMPLATE_ID", form.current, {
-        publicKey: "KEY_PUBLIC",
-      })
+      .sendForm(
+        import.meta.env.ID_SERVICE,
+        import.meta.env.TEMPLATE_ID,
+        form.current,
+        import.meta.env.KEY_PUBLIC
+      )
       .then(
         () => {
-          console.log("SUCCESS!");
+          console.log("Message envoyé !");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("Erreur :", error.text);
         }
       );
   };
@@ -36,7 +41,6 @@ export default function Contact() {
           <h2 className="mb-8 text-2xl md:text-3xl text-center font-display font-semibold tracking-tight">
             Me contacter
           </h2>
-
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -54,7 +58,6 @@ export default function Contact() {
                      focus:outline-none focus:border-blue-500 transition"
               />
             </div>
-
             <div className="relative input-box w-full">
               <motion.input
                 type="email"
@@ -65,7 +68,6 @@ export default function Contact() {
                    focus:outline-none focus:border-blue-500 transition"
               />
             </div>
-
             <div className="relative input-box w-full">
               <motion.textarea
                 name="message"
@@ -75,7 +77,6 @@ export default function Contact() {
                    focus:outline-none focus:border-blue-500 transition"
               />
             </div>
-
             <motion.button
               type="submit"
               value="Send"
