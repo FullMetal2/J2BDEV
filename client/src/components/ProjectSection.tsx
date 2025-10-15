@@ -26,13 +26,13 @@ export default function ProjectSection({ title, items, variant }: Props) {
         className={`grid justify-items-center gap-10 ${
           colsByVariant[variant ?? "grid"]
         }`}
-        initial={{ opacity: 0, x: isDesktop ? -100 : 0 }} // 🚀 départ sur le côté gauche
+        initial={{ opacity: 0, x: isDesktop ? -500 : 0 }} // 🚀 départ sur le côté gauche
         whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
         transition={{
           type: "spring",
           stiffness: 60,
           damping: 10,
-          duration: 1, // ⏱ vitesse
+          duration: 0.6, // ⏱ vitesse
           ease: "easeOut", // 🧈 effet de fluidité
         }}
       >

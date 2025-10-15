@@ -32,12 +32,7 @@ export default function HeaderHome() {
             Projets
           </NavLink>{" "}
           | <HashLink to="/#contact">Contact</HashLink> |{" "}
-          <a
-            href="/Feedly.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
+          <a href="" target="_blank" rel="noopener noreferrer" className="">
             Mon CV
           </a>
         </nav>

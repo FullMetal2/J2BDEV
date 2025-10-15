@@ -50,9 +50,24 @@
       name="twitter:image"
       content="https://j2bdev.fr/assets/og-image.webp"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/photo.webp"
+      imagesrcset="/assets/photo.webp 1x, /assets/photo@2x.webp 2x"
+      imagesizes="(max-width: 768px) 80vw, 400px"
+    />
   </head>
   <body>
     <div id="root"></div>
+    <div style="display: none">
+      <img
+        src="/assets/photo.webp"
+        alt="Portrait de Jean-Baptiste Bertron"
+        width="384"
+        height="577"
+      />
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import htmlLogo from "../assets/webp/logo-skills/html.webp";
 import cssLogo from "@/assets/webp/logo-skills/css.webp";
 import jsLogo from "@/assets/webp/logo-skills/js.webp";
@@ -18,25 +17,13 @@ const skills = [
 ];
 
 export default function Skills() {
-  const isDesktop = window.innerWidth >= 1024;
   return (
     <>
       <section className="">
         <h2 className=" flex justify-center text-2xl md:text-3xl mb-15 text-center font-display font-semibold tracking-tight">
           Mes compétences principales
         </h2>
-        <motion.div
-          className="grid grid-cols-4 lg:grid-cols-6 gap-12"
-          initial={{ opacity: 0, x: isDesktop ? -100 : 0 }} // 🚀 départ sur le côté gauche
-          whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
-          transition={{
-            type: "spring",
-            stiffness: 60,
-            damping: 10,
-            duration: 2, // ⏱ vitesse
-            ease: "easeOut", // 🧈 effet de fluidité
-          }}
-        >
+        <div className="grid grid-cols-4 lg:grid-cols-6 gap-12">
           {skills.map((skills) => (
             <div key={skills.name} className="flex flex-col items-center gap-5">
               <p className="flex gap-4 font-sans leading-relaxed text-neutral-700 dark:text-neutral-300">
@@ -49,7 +36,7 @@ export default function Skills() {
               />
             </div>
           ))}
-        </motion.div>
+        </div>
       </section>
     </>
   );

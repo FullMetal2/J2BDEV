@@ -1,0 +1,7 @@
+# robots.txt pour j2bdev.fr
+
+User-agent: *
+Allow: /
+
+
+Sitemap: https://j2bdev.fr/sitemap.xml

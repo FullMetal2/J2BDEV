@@ -1,21 +1,21 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "J2BDev | Développeur Front-End React",
+  "short_name": "J2BDev",
+  "description": "Portfolio de Jean-Baptiste Bertron, développeur front-end passionné par React et Tailwind.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
   "icons": [
     {
-      "src": "/assets/web-app-manifest-192x192.png",
+      "src": "/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
-      "src": "/assets/web-app-manifest-512x512.png",
+      "src": "/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
-  ],
-  "theme_color": "#161616",
-  "background_color": "#161616",
-  "display": "standalone"
+  ]
 }

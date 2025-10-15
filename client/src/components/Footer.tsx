@@ -20,6 +20,8 @@ export default function Footer() {
               <img src={logo} alt="Logo J2BDev" className="h-8" />
               <a
                 href="https://www.instagram.com/fullmetal269/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="opacity-80 hover:opacity-100"
               >
                 <img src={insta} alt="instagram" className="h-5 w-5" />
@@ -29,6 +31,8 @@ export default function Footer() {
               </a>
               <a
                 href="https://github.com/FullMetal2"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="opacity-80 hover:opacity-100"
               >
                 <img src={git} alt="Git" className="h-5 w-5" />
@@ -73,12 +77,7 @@ export default function Footer() {
                 Projets
               </NavLink>{" "}
               | <HashLink to="/#contact">Contact</HashLink> |{" "}
-              <a
-                href="/Feedly.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
+              <a href="" target="_blank" rel="noopener noreferrer" className="">
                 Mon CV
               </a>
             </nav>
