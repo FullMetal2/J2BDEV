@@ -14,9 +14,24 @@ export default function HeaderHome() {
           Développeur web full-stack — React, Node, TypeScript
         </h1>
         <nav className="md:mt-0 text-sm-base space-x-2 gap-12 py-10">
-          <NavLink to="/">Accueil</NavLink> |{" "}
-          <NavLink to="/projects">Projets</NavLink> |{" "}
-          <HashLink to="/#contact">Contact</HashLink> |{" "}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Accueil
+          </NavLink>{" "}
+          |{" "}
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Projets
+          </NavLink>{" "}
+          | <HashLink to="/#contact">Contact</HashLink> |{" "}
           <a
             href="/Feedly.pdf"
             target="_blank"

@@ -13,8 +13,24 @@ export default function HeaderProject() {
           Mes projets
         </h1>
         <nav className="md:mt-0 text-sm-base space-x-2 gap-12 py-10">
-          <NavLink to="/">Accueil</NavLink> |{" "}
-          <NavLink to="/projects">Projets</NavLink> |{" "}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Accueil
+          </NavLink>{" "}
+          |{" "}
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Projets
+          </NavLink>{" "}
+          |{" "}
           <a
             href="/Feedly.pdf"
             target="_blank"

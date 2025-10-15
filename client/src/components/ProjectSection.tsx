@@ -1,4 +1,5 @@
 import { type Project } from "../lib/dataProjects";
+import { motion } from "framer-motion";
 
 type Props = {
   title: string;
@@ -20,11 +21,24 @@ export default function ProjectSection({ title, items, variant }: Props) {
         {title}
       </h2>
 
-      <ul className={`grid gap-10 ${colsByVariant[variant ?? "grid"]}`}>
+      <motion.ul
+        className={`grid justify-items-center gap-10 ${
+          colsByVariant[variant ?? "grid"]
+        }`}
+        initial={{ opacity: 0, x: 1000 }} // 🚀 départ sur le côté gauche
+        whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
+        transition={{
+          type: "spring",
+          stiffness: 60,
+          damping: 10,
+          duration: 1, // ⏱ vitesse
+          ease: "easeOut", // 🧈 effet de fluidité
+        }}
+      >
         {items.map((p) => (
-          <li
+          <motion.li
             key={p.id}
-            className="p-4 card-wrapper md:size-110 overflow-hidden rounded-xl"
+            className="p-4 card-wrapper  md:size-110 overflow-hidden rounded-xl"
           >
             <a href={p.demoUrl ?? p.repoUrl} target="_blank" rel="noreferrer">
               <div className="card">
@@ -36,9 +50,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
                 />
 
                 <h3 className="text-lg font-medium">{p.title}</h3>
-                <p className="mt-1 text-sm text-indigo-300 opacity-80">
-                  {p.summary}
-                </p>
+                <p className="mt-1 text-sm opacity-80">{p.summary}</p>
                 {p.tags?.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-2 text-xs opacity-80">
                     {p.tags.map((t) => (
@@ -50,9 +62,9 @@ export default function ProjectSection({ title, items, variant }: Props) {
                 )}
               </div>
             </a>
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 }

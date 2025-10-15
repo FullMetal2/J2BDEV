@@ -9,49 +9,70 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <section className="md:py-20 text-neutral-300 rounded-2xl">
+      <section className=" border-t border-white/10 md:py-20  text-neutral-300 ">
         <footer
-          className="mx-auto max-w-6xl px-4
+          className=" pt-4 mx-auto max-w-6xl px-4
                   grid gap-8
-                  sm:grid-cols-2 lg:grid-cols-3"
+                  sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
         >
           <div className="space-y-3">
-            <img src={logo} alt="Logo J2BDev" className="h-8" />
-
             <div className="flex items-center gap-4">
-              <a href="" className="opacity-80 hover:opacity-100">
+              <img src={logo} alt="Logo J2BDev" className="h-8" />
+              <a
+                href="https://www.instagram.com/fullmetal269/"
+                className="opacity-80 hover:opacity-100"
+              >
                 <img src={insta} alt="instagram" className="h-5 w-5" />
               </a>
               <a href="" className="opacity-80 hover:opacity-100">
                 <img src={lk} alt="linkedin" className="h-5 w-5" />
               </a>
-              <a href="" className="opacity-80 hover:opacity-100">
+              <a
+                href="https://github.com/FullMetal2"
+                className="opacity-80 hover:opacity-100"
+              >
                 <img src={git} alt="Git" className="h-5 w-5" />
               </a>
             </div>
           </div>
-          <div>
-            <span className="text-neutral-400">
+          <div className="flex flex-col items-center text-center lg:text-left space-y-2 ">
+            <p>
               Mail:{" "}
               <a href="mailto: contacte@j2bdev.fr" className="cursor-pointer">
                 contact@j2bdev.fr
               </a>
-            </span>
+            </p>
             <p className="text-sm text-neutral-500">
-              © 2025 J2BDev - Tous droits réservés{" "}
+              © 2025 J2BDev - Tous droits réservés
             </p>
             <p className="text-sm text-neutral-500">
               "Portfolio codé par moi-même (React / Tailwind)"
             </p>
           </div>
           <div>
-            <h4 className="text-neutral-400 text-sm uppercase font-display tracking-wide">
+            <h4 className="text-neutral-400 text-sm uppercase text-center font-display tracking-wide">
               Navigation
-            </h4>
+            </h4>{" "}
+            <br />
             <nav className="space-y-2 lg:justify-self-end">
-              <NavLink to="/">Accueil</NavLink> |{" "}
-              <NavLink to="/projects">Projets</NavLink> |{" "}
-              <HashLink to="/#contact">Contact</HashLink> |{" "}
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Accueil
+              </NavLink>{" "}
+              |{" "}
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Projets
+              </NavLink>{" "}
+              | <HashLink to="/#contact">Contact</HashLink> |{" "}
               <a
                 href="/Feedly.pdf"
                 target="_blank"

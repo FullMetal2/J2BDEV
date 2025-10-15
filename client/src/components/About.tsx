@@ -11,7 +11,7 @@ export default function About() {
         />
         <div className="max-w-xl">
           <p className="mt-4 text-base md:text-lg font-sans leading-relaxed text-gray-300">
-            Je suis Jb, développeur web full-stack junior fraîchement diplômé.
+            Je suis Jean-Baptiste Bertron, développeur web front-end junior.
             J’ai déjà réalisé plusieurs projets en React, Node.js et TypeScript,
             et je suis prêt à apprendre de nouvelles technologies selon les
             besoins. Passionné par la tech et la création, j’aime transformer

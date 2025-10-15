@@ -1,7 +1,7 @@
 @layer components {
   :root {
     --card-bg: #171717;
-    --glow: rgba(54, 121, 255, 0.8);
+    --glow: #4f46e5;
   }
 
   .card-wrapper {
@@ -37,16 +37,16 @@
   .card-wrapper::after {
     content: "";
     position: absolute;
-    inset: 1.5px;
+    inset: 1px;
     background: var(--card-bg);
-    border-radius: 14px;
+    border-radius: 12px;
     z-index: 0;
     pointer-events: none;
   }
 
   .card-wrapper:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(54, 121, 255, 0.3);
+    box-shadow: 0 10px 30px #4f46e5;
   }
 
   @media (prefers-reduced-motion: reduce) {
