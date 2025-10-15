@@ -19,10 +19,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        import.meta.env.ID_SERVICE,
-        import.meta.env.TEMPLATE_ID,
+        import.meta.env.VITE_ID_SERVICE,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        import.meta.env.KEY_PUBLIC
+        import.meta.env.VITE_KEY_PUBLIC
       )
       .then(
         () => {
