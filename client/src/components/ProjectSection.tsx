@@ -12,6 +12,7 @@ const colsByVariant = {
 };
 
 export default function ProjectSection({ title, items, variant }: Props) {
+  const isDesktop = window.innerWidth >= 1024;
   if (items.length === 0)
     return <p className="opacity-70">Aucun projet trouvé.</p>;
 
@@ -25,7 +26,7 @@ export default function ProjectSection({ title, items, variant }: Props) {
         className={`grid justify-items-center gap-10 ${
           colsByVariant[variant ?? "grid"]
         }`}
-        initial={{ opacity: 0, x: 1000 }} // 🚀 départ sur le côté gauche
+        initial={{ opacity: 0, x: isDesktop ? -100 : 0 }} // 🚀 départ sur le côté gauche
         whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
         transition={{
           type: "spring",

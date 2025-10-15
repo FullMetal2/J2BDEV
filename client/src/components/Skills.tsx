@@ -18,6 +18,7 @@ const skills = [
 ];
 
 export default function Skills() {
+  const isDesktop = window.innerWidth >= 1024;
   return (
     <>
       <section className="">
@@ -26,7 +27,7 @@ export default function Skills() {
         </h2>
         <motion.div
           className="grid grid-cols-4 lg:grid-cols-6 gap-12"
-          initial={{ opacity: 0, x: -1000 }} // 🚀 départ sur le côté gauche
+          initial={{ opacity: 0, x: isDesktop ? -100 : 0 }} // 🚀 départ sur le côté gauche
           whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
           transition={{
             type: "spring",

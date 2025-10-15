@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const isDesktop = window.innerWidth >= 1024;
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,7 +39,7 @@ export default function Contact() {
           <motion.form
             ref={form}
             onSubmit={sendEmail}
-            initial={{ opacity: 0, x: -1000 }} // 🚀 départ sur le côté gauche
+            initial={{ opacity: 0, x: isDesktop ? -100 : 0 }} // 🚀 départ sur le côté gauche
             whileInView={{ opacity: 1, x: 0 }} // 🎯 arrive au centre
             transition={{
               type: "spring",
