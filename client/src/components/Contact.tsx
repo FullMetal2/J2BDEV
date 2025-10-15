@@ -51,6 +51,9 @@ export default function Contact() {
             className="flex flex-col gap-10"
           >
             <div className="relative input-box w-full">
+              <label htmlFor="from_name" className="sr-only">
+                Nom
+              </label>
               <input
                 type="text"
                 name="from_name"
@@ -61,6 +64,9 @@ export default function Contact() {
               />
             </div>
             <div className="relative input-box w-full">
+              <label htmlFor="from_email" className="sr-only">
+                Email
+              </label>
               <input
                 type="email"
                 name="from_email"
@@ -70,6 +76,9 @@ export default function Contact() {
               />
             </div>
             <div className="relative input-box w-full">
+              <label htmlFor="message" className="sr-only">
+                Message
+              </label>
               <textarea
                 name="message"
                 placeholder="Votre message ..."
