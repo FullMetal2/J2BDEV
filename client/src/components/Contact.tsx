@@ -56,6 +56,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                id="from_name"
                 name="from_name"
                 required
                 placeholder="Nom"
@@ -69,6 +70,7 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                id="from_email"
                 name="from_email"
                 placeholder="Email"
                 className="input w-full bg-white/5 border border-white/10 rounded-lg px-3 pt-2 py-2 text-gray-100 placeholder-gray-400
@@ -80,6 +82,7 @@ export default function Contact() {
                 Message
               </label>
               <textarea
+                id="message"
                 name="message"
                 placeholder="Votre message ..."
                 className="input w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 min-h-32 text-gray-100 placeholder-gray-400
