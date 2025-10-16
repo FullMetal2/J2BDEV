@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   return (
     <>
       <HeaderProject />
-      <main>
+      <main className="container">
         <AboutProject />
         <div className="py-10">
           <TrainingProject />
