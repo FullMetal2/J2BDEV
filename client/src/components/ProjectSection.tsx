@@ -8,7 +8,7 @@ type Props = {
 };
 const colsByVariant = {
   featured: "grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto",
-  grid: "grid-cols-1 sm:grid-cols-2 max-w6xl mx-auto",
+  grid: "grid-cols-1 sm:grid-cols-2 max-w-6xl mx-auto",
 };
 
 export default function ProjectSection({ title, items, variant }: Props) {
