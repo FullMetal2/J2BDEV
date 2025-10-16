@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const isDesktop = window.innerWidth >= 1024;
   const form = useRef<HTMLFormElement>(null);
 
@@ -21,12 +23,15 @@ export default function Contact() {
       .then(
         () => {
           console.log("Message envoyé !");
+          setStatus("success");
           form.current?.reset();
         },
         (error) => {
+          setStatus("error");
           console.log("Erreur :", error.text);
         }
       );
+    setTimeout(() => setStatus("idle"), 5000);
   };
 
   return (
@@ -73,6 +78,7 @@ export default function Contact() {
                 id="from_email"
                 name="from_email"
                 placeholder="Email"
+                required
                 className="input w-full bg-white/5 border border-white/10 rounded-lg px-3 pt-2 py-2 text-gray-100 placeholder-gray-400
                    focus:outline-none focus:border-indigo-500 focus:bg-white/10 transition"
               />
@@ -84,6 +90,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
+                required
                 placeholder="Votre message ..."
                 className="input w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 min-h-32 text-gray-100 placeholder-gray-400
                    focus:outline-none focus:border-indigo-500 focus:bg-white/10 transition"
@@ -97,6 +104,15 @@ export default function Contact() {
               Envoyer
             </button>
           </motion.form>
+          {status === "success" && (
+            <p className="mt-4 text-center"> ✅ Message envoyé avec succès !</p>
+          )}
+          {status === "error" && (
+            <p className="mt-4 text-center">
+              {" "}
+              ❌ Une erreur est survenue. Veuillez réessayer.
+            </p>
+          )}
         </div>
       </section>
     </>

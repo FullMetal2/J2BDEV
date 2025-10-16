@@ -10,15 +10,21 @@
 
 /* body global */
 body {
-  margin: 0;
-  min-height: 100dvh; /* mieux que 100vh sur mobile */
-  display: grid;
+  min-height: 100dvh;
   place-items: center;
   padding: 20px 10px;
   background: #171717;
   color: rgba(255, 255, 255, 0.87);
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem; /* ≈ 1152px */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .logo {
@@ -31,7 +37,7 @@ p {
 }
 
 a {
-  color: #4f46e5;
+  color: #9e9aef;
   text-decoration: none;
   text-underline-offset: 4px;
 }

@@ -9,11 +9,11 @@ import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <section className=" border-t border-white/10 md:py-20  text-neutral-300 ">
-        <footer
+      <footer className="border-t  border-white/10 md:py-20  text-neutral-300 ">
+        <section
           className=" pt-4 mx-auto max-w-6xl px-4
                   grid gap-8
-                  sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+                  sm:grid-cols-2 lg:grid-cols-3 justify-items-center relative"
         >
           <div className="space-y-3">
             <div className="flex items-center gap-4">
@@ -54,9 +54,9 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="text-neutral-400 text-sm uppercase text-center font-display tracking-wide">
+            <h3 className="text-neutral-400 text-sm uppercase text-center font-display tracking-wide">
               Navigation
-            </h4>{" "}
+            </h3>{" "}
             <br />
             <nav className="space-y-2 lg:justify-self-end">
               <NavLink
@@ -82,19 +82,18 @@ export default function Footer() {
               </a>
             </nav>
           </div>
-          <div>
-            <div className=" mx-auto max-w-6xl px-4 py-4 text-xs text-neutral-500 flex items-center ">
-              <button
-                aria-label="Remonter"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="rounded-full border border-white/15 p-2 hover:bg-white/5 "
-              >
-                <img src={arrow} alt="Arrow-top" className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        </footer>
-      </section>
+        </section>
+      </footer>
+
+      <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-neutral-500 fixed z-50 bottom-0 right-0">
+        <button
+          aria-label="Remonter"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="rounded-full border border-white/15 p-2 hover:bg-white/5 "
+        >
+          <img src={arrow} alt="Arrow-top" className="h-5 w-5" />
+        </button>
+      </div>
     </>
   );
 }

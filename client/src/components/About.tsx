@@ -8,7 +8,7 @@ export default function About() {
         <img
           src={user}
           data-src={user2}
-          alt="Photo de Jb"
+          alt="Portrait de Jean-Baptiste Bertron"
           fetchPriority="high"
           loading="eager"
           decoding="async"
@@ -19,11 +19,12 @@ export default function About() {
         />
         <div className="max-w-xl">
           <p className="mt-4 text-base md:text-lg font-sans leading-relaxed text-gray-300">
-            Je suis Jean-Baptiste Bertron, développeur web front-end junior.
-            J’ai déjà réalisé plusieurs projets en React, Node.js et TypeScript,
-            et je suis prêt à apprendre de nouvelles technologies selon les
-            besoins. Passionné par la tech et la création, j’aime transformer
-            des idées en applications modernes et utiles.
+            Je suis Jean-Baptiste Bertron, développeur web front-end junior,
+            passionné par la création et le code. J’aime concevoir des
+            interfaces modernes, performantes et accessibles avec React et
+            Tailwind CSS, en accordant une attention particulière à l’expérience
+            utilisateur. Actuellement, je me forme au back-end avec Node.js afin
+            de comprendre l’ensemble de la stack et devenir plus polyvalent.
           </p>
         </div>
       </section>

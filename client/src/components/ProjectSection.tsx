@@ -45,8 +45,8 @@ export default function ProjectSection({ title, items, variant }: Props) {
               <div className="card">
                 <img
                   src={p.cover}
-                  alt={p.title}
-                  className="mb-3 rounded-lg"
+                  alt={p.alt}
+                  className="mb-3 rounded-lg transition duration-500 ease-out md:grayscale-[60%] md:hover:grayscale-0 md:hover:shadow-[0_0_20px_rgba(79,70,229,0.3)]"
                   loading="lazy"
                 />
 

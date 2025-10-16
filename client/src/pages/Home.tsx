@@ -8,22 +8,21 @@ import Footer from "../components/Footer";
 export default function HomePage() {
   return (
     <>
-      <div className="">
-        <HeaderHome />
+      <HeaderHome />
+      <main className="container">
         <About />
-      </div>
-      <div className="py-10">
-        <Skills />
-      </div>
-      <div className="py-10">
-        <Featured />
-      </div>
-      <div className="py-10">
-        <Contact />
-      </div>
-      <div className="py-10">
-        <Footer />
-      </div>
+        <div className="py-10">
+          <Skills />
+        </div>
+        <div className="py-10">
+          <Featured />
+        </div>
+        <div className="py-10">
+          <Contact />
+        </div>
+      </main>
+
+      <Footer />
     </>
   );
 }
