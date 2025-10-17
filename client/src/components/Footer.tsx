@@ -27,7 +27,7 @@ export default function Footer() {
                 <img src={insta} alt="instagram" className="h-5 w-5" />
               </a>
               <a
-                href="www.linkedin.com/in/jean-baptiste-bertron-26740438b"
+                href="https://www.linkedin.com/in/jean-baptiste-bertron-26740438b"
                 className="opacity-80 hover:opacity-100"
               >
                 <img src={lk} alt="linkedin" className="h-5 w-5" />
