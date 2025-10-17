@@ -19,9 +19,9 @@ export default function About() {
         />
         <div className="max-w-xl">
           <p className="mt-4 text-base md:text-lg font-sans leading-relaxed text-gray-300">
-            Je suis Jean-Baptiste Bertron, développeur web front-end junior,
-            passionné par la création et le code. J’aime concevoir des
-            interfaces modernes, performantes et accessibles avec React et
+            Jean-Baptiste Bertron — Développeur web front-end junior basé à
+            Perpignan, passionné par la création et le code. J’aime concevoir
+            des interfaces modernes, performantes et accessibles avec React et
             Tailwind CSS, en accordant une attention particulière à l’expérience
             utilisateur. Actuellement, je me forme au back-end avec Node.js afin
             de comprendre l’ensemble de la stack et devenir plus polyvalent.
