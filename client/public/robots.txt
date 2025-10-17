@@ -1,5 +1,3 @@
-# robots.txt pour j2bdev.fr
-
 User-agent: *
 Allow: /
 
