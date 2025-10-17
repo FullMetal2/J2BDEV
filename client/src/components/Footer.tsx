@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <img src={logo} alt="Logo J2BDev" className="h-8" />
               <a
-                href="https://www.instagram.com/fullmetal269/"
+                href="https://www.instagram.com/j2bdev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="opacity-80 hover:opacity-100"
