@@ -20,11 +20,13 @@ Copier le code
 
 ## 🚀 Installation
 
+Le back-end n'est pas terminé le portfolio a été déployé sur https://j2bdev.fr/. Le back-end arrivera plus tard
 Cloner le projet :
 
 ```bash
 git clone https://github.com/<ton-user>/J2BDEV
 cd J2BDEV
+
 Installer les dépendances :
 
 bash
