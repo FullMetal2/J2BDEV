@@ -1,9 +1,7 @@
 # J2BDev – Portfolio
 
+Le back-end n'est pas terminé le portfolio a été déployé sur https://j2bdev.fr/. Le back-end arrivera plus tard
 Portfolio personnel développé avec **React (Vite, TypeScript, Tailwind)** côté front et **Node.js (Express, TypeScript)** côté back.
-
-🚧 Le site est en cours de développement. La version déployée est disponible ici :  
-👉 [Démo en ligne](https://j2-bdev.vercel.app) (page maintenance pour l’instant).
 
 ---
 
@@ -20,7 +18,6 @@ Copier le code
 
 ## 🚀 Installation
 
-Le back-end n'est pas terminé le portfolio a été déployé sur https://j2bdev.fr/. Le back-end arrivera plus tard
 Cloner le projet :
 
 ```bash
