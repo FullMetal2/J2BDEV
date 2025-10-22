@@ -5,7 +5,6 @@ import git from "../assets/webp/logo-skills/git.webp";
 import arrow from "../assets/webp/logo-skills/arrow-top.webp";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
-import Home from "../pages/Home";
 
 export default function Footer() {
   return (
