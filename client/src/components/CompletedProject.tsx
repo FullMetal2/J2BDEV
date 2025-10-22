@@ -10,7 +10,7 @@ export default function FeaturedProjects() {
       <ProjectSection
         title="Projets personnels"
         items={featuredProjects}
-        variant="grid"
+        variant="featured"
       />
     </>
   );

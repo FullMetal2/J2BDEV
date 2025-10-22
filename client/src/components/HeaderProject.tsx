@@ -9,7 +9,9 @@ export default function HeaderProject() {
         className="py-10 md:py-14 border-b border-white/10 md:mb-20"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-between md:flex-row px-6">
-          <img src={logo} alt="Logo J2BDev" className="w-40 md:w-56 mb-3" />
+          <NavLink to="/">
+            <img src={logo} alt="Logo J2BDev" className="w-40 md:w-56 mb-3" />
+          </NavLink>
           <h1 className=" text-neutral-400 sm:text-2xl lg:text-2xl text-center font-display font-semibold tracking-tight">
             Mes projets
           </h1>

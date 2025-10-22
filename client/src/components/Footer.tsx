@@ -5,6 +5,7 @@ import git from "../assets/webp/logo-skills/git.webp";
 import arrow from "../assets/webp/logo-skills/arrow-top.webp";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
+import Home from "../pages/Home";
 
 export default function Footer() {
   return (
@@ -17,7 +18,9 @@ export default function Footer() {
         >
           <div className="space-y-3">
             <div className="flex items-center gap-4">
-              <img src={logo} alt="Logo J2BDev" className="h-8" />
+              <HashLink to="/#accueil">
+                <img src={logo} alt="Logo J2BDev" className="h-8" />
+              </HashLink>
               <a
                 href="https://www.instagram.com/j2bdev/"
                 target="_blank"

@@ -96,6 +96,25 @@ export default function Contact() {
                    focus:outline-none focus:border-indigo-500 focus:bg-white/10 transition"
               />
             </div>
+            <div className="flex items-start gap-2 text-sm text-gray-300">
+              <input
+                type="checkbox"
+                id="consent"
+                required
+                className="mt-1 accent-indigo-500 cursor-pointer"
+              />
+              <label htmlFor="consent">
+                J’accepte que mes données soient utilisées uniquement pour me
+                recontacter dans le cadre de ce formulaire.
+                <a
+                  href="/mentions-legales"
+                  className="text-indigo-400 hover:text-indigo-300 underline ml-1"
+                >
+                  En savoir plus
+                </a>
+              </label>
+            </div>
+
             <button
               type="submit"
               value="Send"
