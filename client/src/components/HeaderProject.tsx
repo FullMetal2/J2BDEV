@@ -34,7 +34,12 @@ export default function HeaderProject() {
               Projets
             </NavLink>{" "}
             |{" "}
-            <a href="" target="_blank" rel="noopener noreferrer" className="">
+            <a
+              href="/CV_dev.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
               Mon CV
             </a>
           </nav>

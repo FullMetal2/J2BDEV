@@ -82,7 +82,12 @@ export default function Footer() {
                 Projets
               </NavLink>{" "}
               | <HashLink to="/#contact">Contact</HashLink> |{" "}
-              <a href="" target="_blank" rel="noopener noreferrer" className="">
+              <a
+                href="/CV_dev.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
                 Mon CV
               </a>
             </nav>
