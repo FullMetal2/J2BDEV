@@ -1,0 +1,14 @@
+{
+      "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveBracketPair": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "prettier.singleQuote": false,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "prettier.trailingComma": "es5",
+  "prettier.arrowParens": "always"
+}

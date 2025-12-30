@@ -1,3 +1,4 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
 @import "./CSS/custom.css";
 
@@ -8,54 +9,61 @@
   --container: 720px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* body global */
 body {
   min-height: 100dvh;
-  display: block;
-  padding: 20px 10px;
-  background: #171717;
-  color: rgba(255, 255, 255, 0.87);
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #0b0e17;
+  color: #e5e7eb;
+  font-family: Inter, system-ui, sans-serif;
   box-sizing: border-box;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80rem; /* ≈ 1152px */
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+@layer {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Roboto Mono", monospace; /* blanc très légèrement violacé */
+    line-height: 1.2;
+  }
 
-.logo {
-  width: 100%;
-  max-width: 112px; /* limite desktop */
-  height: auto;
-}
-p {
-  color: #e5e7eb;
-}
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  }
 
-a {
-  color: #9e9aef;
-  text-decoration: none;
-  text-underline-offset: 4px;
-}
-a:hover {
-  color: #6157cd;
-}
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+  }
 
-a span {
-  color: #6157cd;
-}
+  h3 {
+    font-size: 1.1rem;
+  }
 
-.nav-link.active {
-  text-decoration: underline;
-}
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-    display: flex;
-    flex-direction: column;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* ≈ 1152px */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .nav-link.active {
+    text-decoration: underline;
+  }
+
+  .title-intro {
+    line-height: 1.6;
+    max-width: 50ch;
   }
 }
