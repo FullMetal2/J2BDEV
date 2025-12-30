@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 export default function Hero() {
   return (
     <>
-      <section className="w-full h-[88vh] pt-30 relative">
+      <section className="w-full min-h-[90dvh] pt-30 relative">
         <div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight text-text-primary max-w-3xl mb-20">
             Des sites web performants, pensés avec vous, pour vos utilisateurs
@@ -15,7 +15,7 @@ export default function Hero() {
             WordPress ou React selon votre projet, avec une attention
             particulière portée à la performance, au SEO et à l’accessibilité.
           </p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start mb-12 sm:md-20">
             <HashLink to={"/#contact"}>
               <Button>Parlons de votre projet</Button>
             </HashLink>
