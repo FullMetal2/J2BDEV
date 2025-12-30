@@ -44,7 +44,7 @@ export default function Collab() {
         </p>
 
         <ul className="space-y-3 text-text-secondary">
-          <li>• Shooting photo sur site ou en studio</li>
+          <li>• Shooting photo sur site</li>
           <li>• Direction artistique & conseils avant shooting</li>
           <li>• Sélection & retouches adaptées à l’identité du site</li>
         </ul>
