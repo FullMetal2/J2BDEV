@@ -12,7 +12,7 @@ export default function Mention() {
         </h3>
         <ul className="space-y-2 text-neutral-300 list-disc list-inside">
           <li>
-            Entreprise individuelle — <em>SIRET en cours d’obtention</em>
+            Entreprise individuelle — Siret <em>99925774400014</em>
           </li>
           <li>Responsable de publication : Jean-Baptiste Bertron</li>
           <li>

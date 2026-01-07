@@ -15,13 +15,13 @@ export default function Hero() {
             WordPress ou React selon votre projet, avec une attention
             particulière portée à la performance, au SEO et à l’accessibilité.
           </p>
-          <div className="flex justify-center md:justify-start mb-12 sm:md-20">
+          <div className="flex justify-center lg:justify-start mb-12 sm:md-20">
             <HashLink to={"/#contact"}>
               <Button>Parlons de votre projet</Button>
             </HashLink>
           </div>
         </div>
-        <div className="absolute text-text-muted bottom-10 right-150 hidden md:block">
+        <div className="absolute text-text-muted bottom-0 right-150 hidden lg:block">
           <p>↓</p>
         </div>
       </section>

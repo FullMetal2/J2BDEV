@@ -5,7 +5,7 @@ export default function Problems() {
   return (
     <>
       <section className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-text-primary mb-12 text-center md:text-left">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-text-primary mb-12 md:pt-20 text-center md:text-left">
           Un site web qui ne vous ressemble plus
         </h2>
         <h3 className="text-sm md:text-lg font-medium tracking-tight text-text-secondary mb-8 text-center md:text-left">
