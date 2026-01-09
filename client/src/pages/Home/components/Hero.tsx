@@ -7,13 +7,13 @@ export default function Hero() {
       <section className="w-full min-h-[90dvh] pt-30 relative">
         <div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight text-text-primary max-w-3xl mb-20">
-            Des sites web performants, pensés avec vous, pour vos utilisateurs
+            Des sites web clairs et efficaces pour indépendants et petites
+            entreprises. Je m’occupe de votre site, vous vous concentrez sur
+            votre activité.
           </h1>
           <p className="mb-10 max-w-2xl text-text-secondary leading-relaxed">
-            J’accompagne les TPE et PME dans la création d’un site web qui
-            reflète vraiment leur activité, leurs valeurs et leurs objectifs.
-            WordPress ou React selon votre projet, avec une attention
-            particulière portée à la performance, au SEO et à l’accessibilité.
+            Restaurateurs, artisans, coachs, indépendants : je vous accompagne
+            dans la création, la refonte et la gestion de votre site web.
           </p>
           <div className="flex justify-center lg:justify-start mb-12 sm:md-20">
             <HashLink to={"/#contact"}>
